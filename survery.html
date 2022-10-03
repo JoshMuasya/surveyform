@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name
+          <input id="name" type="text" required placeholder="Name" />
+        </label>      
+        <label id="email-label" for="email">Email
+          <input id="email" type="email" required placeholder="Email" />
+        </label>      
+        <label id="number-label" for="number">Age (optional)
+          <input id="number" type="number" required min="18" max="50" placeholder="Age" />
+        </label>
+
+        <label> Which option best describes your current role?
+          <select id="dropdown">
+            <option>Select current Role</option>
+            <option>Student</option>
+            <option>Full time Job</option>
+            <option>Full time Student</option>
+            <option>Prefer not to Say</option>
+            <option>Other</option>
+          </select>         
+        </label> 
+      </fieldset>
+
+      <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label for="definitely"><input id="definitely" name="refer" type="radio" value="1" class="inline" /> Definitely</label>
+        <label for="maybe"><input id="maybe" name="refer" type="radio" value="2" class="inline" /> Maybe</label>
+        <label for="not-sure"><input id="not-sure" name="refer" type="radio" value="3" class="inline" /> Not Sure</label>
+        <label> What would you like to learn</label>
+          <label for="checkbox"><input id="checkbox" value="1" type="checkbox" class="inline" /> HTML</label>
+          <label for="checkbox"><input id="checkbox" value="2" type="checkbox" class="inline" /> CSS</label>
+          <label for="checkbox"><input id="checkbox" value="3" type="checkbox" class="inline" /> JavaScript</label>
+
+        <label for="comments">Any comments? 
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="What comments do you have?"></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
